@@ -152,11 +152,11 @@
     grid-row: 1 / span 1;
   }
   #gallery-maeve .cs-item-4 {
-    grid-column: 1 / span 18;
+    grid-column: 1 / span 12;
     grid-row: 2 / span 1;
   }
   #gallery-maeve .cs-item-5 {
-    grid-column: 19 / span 18;
+    grid-column: 13 / span 24;
     grid-row: 2 / span 1;
   }
   #gallery-maeve .cs-item-6 {
@@ -179,11 +179,6 @@
     grid-column: 1 / span 36;
     grid-row: 5 / span 1;
   }
-  #gallery-maeve .cs-text {
-    margin: 0 auto;
-    padding: var(--textPadding);
-    font-size: var(--textFontSize);
-  }
 }
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
@@ -204,7 +199,7 @@
     display: grid;
     grid-template-columns: repeat(50, 1fr);
     /* 158px - 304px */
-    grid-template-rows: repeat(40, 1.59375vw);
+    grid-template-rows: repeat(20, 3.1875vw);
     gap: 0;
     border: var(--borderWidth4) solid black;
     border-top: 0px;

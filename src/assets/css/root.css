@@ -333,13 +333,13 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
+    display: none;
     transform: rotate(-85deg);
     transform-origin: top left;
     position: absolute;
     top: 80%;
     left: 0;
     z-index: 10000;
-    display: flex;
     padding: 0;
     margin: 0;
   }
