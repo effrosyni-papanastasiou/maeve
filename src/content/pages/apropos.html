@@ -1,0 +1,53 @@
+---
+title: 'À propos | Paintings by Maeve | Paris'
+headerTitle: "À propos"
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cauchemars/fond.jpg'
+permalink: 'a-propos/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/apropos.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                  Gallery                     -->
+<!-- ============================================ -->
+<section id="gallery-maeve">
+    <div class="cs-container">
+        <ul class="cs-image-group">
+            <!-- Painting 7 -->
+            <li class="cs-item cs-item-1"> 
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/maeve-profile.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/maeve-profile.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/maeve-profile.jpg" alt="photo de presentation" width="255" height="255">
+                </picture>
+            </li>
+            <!-- Text -->
+            <li class="cs-item cs-item-2">
+                <h2 class="cs-text">
+                    Empreinte d’une Vie...
+                </h2>
+                <p class="cs-text">
+                    De détours en détours, après un parcours professionnel riche en 
+                    relations humaines, je reviens, encore et toujours, comme un fil 
+                    d’Ariane, vers mes sensibilités premières pour exprimer - par les 
+                    couleurs, les lignes, les combinaisons de formes abstraites ou 
+                    concrètes - mon ressenti émotionnel au monde, mes souvenirs, 
+                    mes émerveillements, comme un témoignage, un partage possible...
+                    Une empreinte...
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+                                
+
+{% endblock %}

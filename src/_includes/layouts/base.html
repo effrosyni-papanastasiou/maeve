@@ -39,10 +39,12 @@
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
-        <link rel="stylesheet" href="/assets/css/dark.css">
-        <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
+        <script defer src="/assets/js/jquery.js"></script>
+        <script defer src="/assets/js/lity.js"></script>  
+        <link rel="stylesheet" href="/assets/css/lity.css">
+  
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
@@ -50,12 +52,11 @@
     <body>
         <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
-
-        {% include "components/header.html" %}
+        {% include "components/footer.html" %}
         <main id="main">
+            {% include "components/header.html" %}
             {% block body %}{% endblock %}
         </main>
-        {% include "components/footer.html" %}
 
     </body>
 </html>
