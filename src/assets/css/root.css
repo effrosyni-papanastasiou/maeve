@@ -1,11 +1,16 @@
-/* CODESTITCH STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
+/* CORE STYLES, RESET, HEADER/NAVIGATION AND FOOTER */
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-/* Rotation, different for mobile and desktop */
-@media only screen and (min-width: 0rem) {
-  main {
-    transform: rotate(5deg) translate(10%, -1%);
+/* View, different for mobile and desktop */
+@media only screen and (max-width: 48rem) {
+  :root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 1rem;
   }
 }
 @media only screen and (min-width: 48rem) {
@@ -37,7 +42,7 @@
     --borderWidth8: 8px;
     --letterSpacing: 0.4em;
     /* 31px - 49px */
-    --bodyFontSize: 1rem;
+    --bodyFontSize: clamp(0.8rem, 1.3vw, 1rem);
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --textPadding: clamp(1.75rem, 1.82vw, 2.25rem) 1rem;
@@ -51,7 +56,8 @@
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     color: var(--bodyTextColor);
-    text-align: inherit;
+    text-align: justify;
+    padding: var(--textPadding);
   }
   .cs-hide-on-mobile {
     display: none;
@@ -155,6 +161,131 @@
     font-weight: 400;
     font-size: 1.2rem;
   }
+  #gallery-maeve {
+    position: relative;
+  }
+  #gallery-maeve .cs-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-maeve .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-maeve .cs-image-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(36, 1fr);
+    grid-template-rows: repeat(8, 6vw);
+    gap: 0;
+  }
+  #gallery-maeve .cs-item {
+    background-color: white;
+    border: var(--borderWidth2) solid black;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    grid-column: span 6;
+    /* display: block; */
+    position: relative;
+    /* prevents image from overflowing the container on hover */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #gallery-maeve .cs-item:hover img {
+    transform: scale(1.1);
+  }
+  #gallery-maeve .cs-item:hover .cs-link {
+    /* Return to original position */
+    transform: translateY(0);
+  }
+  #gallery-maeve .cs-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  #gallery-maeve .cs-picture img {
+    position: relative;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: initial;
+    transition: transform 0.6s;
+    border: 1px solid black;
+    border-bottom: var(--borderWidth4) solid black;
+  }
+  #gallery-maeve .cs-h2 {
+    /* 14px - 20px */
+    font-size: 1rem;
+    line-height: 1em;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    color: var(--headerColor);
+    display: block;
+    /* starting point is 10px down from its original point */
+    transition: transform 0.5s;
+  }
+  #gallery-maeve .cs-link {
+    font-size: 0.9375rem;
+    line-height: 2.875rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 1.4375rem;
+    overflow: hidden;
+    /* starting point is 10px down from its original point */
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #gallery-maeve .cs-link:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+  #gallery-maeve .cs-link:hover:before {
+    width: 100%;
+  }
+  #gallery-maeve .cs-link:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    opacity: 1;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #gallery-maeve .cs-title-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
   /* segoe-regular - latin */
   @font-face {
     font-style: normal;
@@ -218,7 +349,7 @@
   <---     Mobile Navigation      -->
   <--- -------------------------- -*/
 /* Mobile - 1023px */
-@media only screen and (max-width: 63.9375rem) {
+@media only screen and (max-width: 48rem) {
   body.cs-open {
     overflow: hidden;
   }
@@ -250,7 +381,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     height: 100%;
     max-width: 9.125rem;
     width: 40%;
@@ -260,7 +390,11 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size: 2.8rem;
+    font-size: var(--MobileTitleFontSize);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0 auto;
     white-space: nowrap;
   }
   #cs-navigation .cs-logo a {
@@ -319,12 +453,12 @@
     height: 5.6944%;
     max-width: 21.875rem;
     width: 18.4%;
-    padding: 0;
     color: black;
     text-decoration: none;
     font-size: var(--headerFontSize);
     font-weight: 500;
     white-space: nowrap;
+    text-transform: uppercase;
   }
 }
 /*-- -------------------------- -->
@@ -334,7 +468,6 @@
 @media only screen and (min-width: 0rem) {
   #footer {
     display: none;
-    transform: rotate(-85deg);
     transform-origin: top left;
     position: absolute;
     top: 80%;
@@ -385,6 +518,67 @@
     font-size: var(--empreintesFontSize);
   }
   #footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+/*-- -------------------------- -->
+  <---    footer-inner         -->
+  <--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  #footer-inner {
+    display: none;
+    transform-origin: top left;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    z-index: 10000;
+    padding: 0;
+    margin: 0;
+  }
+  #footer-inner a {
+    font-size: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: var(--letterSpacing);
+  }
+  #footer-inner .container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 48rem) {
+  #footer-inner {
+    background-color: white;
+    z-index: 10000;
+    /* font-size: min(1.2vw, 1em); */
+    transform: rotate(90deg);
+    transform-origin: top right;
+    position: fixed;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: unset;
+    width: 100vh;
+    /*vh is important*/
+    /* height: 9rem; */
+    padding: clamp(3rem, 1vw, 4.5rem);
+    border-bottom: 20px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer-inner a {
+    font-size: clamp(3rem, 2vw, 4rem);
+  }
+  #footer-inner .container {
     display: flex;
     justify-content: center;
     align-items: center;
