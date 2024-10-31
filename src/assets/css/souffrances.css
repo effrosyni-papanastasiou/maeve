@@ -6,6 +6,9 @@
   :root {
     background-color: black;
   }
+  #cs-navigation .cs-logo {
+    font-size: clamp(1.2rem, 1vw, 1.2rem);
+  }
   #gallery-maeve .cs-image-group {
     background-color: black;
     grid-template-columns: repeat(36, 1fr);
