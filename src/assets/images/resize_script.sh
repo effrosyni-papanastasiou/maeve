@@ -10,10 +10,11 @@ fi
 PIXELS=$1
 
 # Directory containing the images
-FILES="./souvenirs-meles/"
+#FILES="./abstractions/"
+FILES=$2
 
 # Loop through each file in the directory that matches .jpeg, .jpg, or .png
-for file in "$FILES"*.jpeg "$FILES"*.jpg "$FILES"*.png; do
+for file in "$FILES"*.JPG "$FILES"*.jpg "$FILES"*.png; do
     # Check if the file exists (to avoid errors if there are no matching files)
     if [ -e "$file" ]; then
         # Resize the image to the specified pixel size (preserving aspect ratio)

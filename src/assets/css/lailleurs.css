@@ -4,69 +4,123 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   :root {
-    background-color: #D7BFAE;
+    background-color: #573720;
   }
   #cs-navigation .cs-logo {
-    font-size: var(--MobileTitleFontSize);
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(36, 1fr);
     /* 158px - 304px */
-    grid-template-rows: repeat(25, clamp(1.8rem, 12.5vw, 14.5rem));
   }
   #gallery-maeve .cs-item-1 {
     grid-column: 1 / span 18;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 7;
+  }
+  #gallery-maeve .cs-item-1 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-2 {
     grid-column: 19 / span 18;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 7;
+  }
+  #gallery-maeve .cs-item-2 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-3 {
     grid-column: 1 / span 18;
-    grid-row: 4 / span 3;
+    grid-row: 8 / span 7;
+  }
+  #gallery-maeve .cs-item-3 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-4 {
     grid-column: 19 / span 18;
-    grid-row: 4 / span 3;
+    grid-row: 15 / span 7;
+  }
+  #gallery-maeve .cs-item-4 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 0.8;
   }
   #gallery-maeve .cs-item-5 {
     grid-column: 1 / span 18;
-    grid-row: 7 / span 3;
+    grid-row: 15 / span 7;
+  }
+  #gallery-maeve .cs-item-5 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 0.8;
   }
   #gallery-maeve .cs-item-6 {
     grid-column: 19 / span 18;
-    grid-row: 7 / span 3;
+    grid-row: 8 / span 7;
+  }
+  #gallery-maeve .cs-item-6 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-7 {
     grid-column: 1 / span 18;
-    grid-row: 10 / span 3;
+    grid-row: 22 / span 7;
+  }
+  #gallery-maeve .cs-item-7 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-8 {
     grid-column: 19 / span 18;
-    grid-row: 10 / span 3;
+    grid-row: 22 / span 7;
+  }
+  #gallery-maeve .cs-item-8 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-9 {
     grid-column: 1 / span 18;
-    grid-row: 13 / span 3;
+    grid-row: 29 / span 7;
   }
-  #gallery-maeve .cs-item-10 {
+  #gallery-maeve .cs-item-9 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
+  }
+  #gallery-maeve .cs-item-11 {
     grid-column: 19 / span 18;
-    grid-row: 13 / span 3;
+    grid-row: 29 / span 7;
+  }
+  #gallery-maeve .cs-item-11 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-12 {
     grid-column: 1 / span 18;
-    grid-row: 16 / span 3;
+    grid-row: 36 / span 7;
+  }
+  #gallery-maeve .cs-item-12 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
   }
   #gallery-maeve .cs-item-13 {
     grid-column: 19 / span 18;
-    grid-row: 16 / span 3;
+    grid-row: 36 / span 7;
   }
-  #gallery-maeve .cs-item-11 {
-    grid-column: 1 / span 18;
-    grid-row: 19 / span 3;
+  #gallery-maeve .cs-item-13 .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
+  }
+  #gallery-maeve .cs-item-10 {
+    grid-column: 19 / span 18;
+    grid-row: 43 / span 7;
+  }
+  #gallery-maeve .cs-item-14,
+  #gallery-maeve .cs-item-15,
+  #gallery-maeve .cs-item-16,
+  #gallery-maeve .cs-item-17,
+  #gallery-maeve .cs-item-18 {
+    display: none;
   }
 }
 /* ----------- Tablet - 768px --------------*/
@@ -75,12 +129,12 @@
     margin: 0 20%;
   }
   #gallery-maeve .cs-image-group {
-    grid-template-columns: repeat(52, 1fr);
+    grid-template-columns: repeat(60, 1fr);
     grid-template-rows: repeat(25, 3vw);
   }
   #gallery-maeve .cs-item-13 {
-    grid-column: 1 / span 10;
-    grid-row: 9 / span 5;
+    grid-column: 1 / span 14;
+    grid-row: 8 / span 6;
   }
   #gallery-maeve .cs-item-13 .cs-picture {
     display: flex;
@@ -99,85 +153,57 @@
     object-fit: contain;
   }
   #gallery-maeve .cs-item-3 {
-    grid-column: 1 / span 10;
-    grid-row: 14 / span 5;
+    grid-column: 1 / span 14;
+    grid-row: 13 / span 6;
   }
   #gallery-maeve .cs-item-5 {
-    margin-left: 2.55%;
-    grid-column: 14 / span 11;
-    grid-row: 2 / span 5;
-    border-left: var(--borderWidth8) solid black;
+    background-color: white;
+    grid-column: 16 / span 14;
+    grid-row: 1 / span 6;
     border-right: 0;
-  }
-  #gallery-maeve .cs-item-5 .cs-picture {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    height: 50%;
-    object-fit: contain;
-    transform: rotate(90deg);
+    border-top: 0px;
   }
   #gallery-maeve .cs-item-5 .cs-picture img {
-    position: relative;
-    object-fit: contain;
-  }
-  #gallery-maeve .cs-item-17 {
-    grid-column: 12 / span 14;
-    grid-row: 1 / span 6;
-    z-index: -1;
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin: 0 auto;
   }
   #gallery-maeve .cs-item-8 {
-    grid-column: 12 / span 14;
+    grid-column: 16 / span 14;
     grid-row: 7 / span 6;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
   #gallery-maeve .cs-item-8 .cs-picture {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    height: 90%;
-    width: 90%;
-    object-fit: contain;
+    border-bottom: var(--borderWidth2) solid black;
   }
   #gallery-maeve .cs-item-8 .cs-picture img {
-    position: relative;
-    object-fit: contain;
+    width: 95%;
+    border: 3px solid black;
+    border-bottom: 0;
+    margin-bottom: 0;
+    object-fit: cover;
   }
   #gallery-maeve .cs-item-7 {
-    grid-column: 12 / span 14;
+    grid-column: 16 / span 14;
     grid-row: 13 / span 6;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
   #gallery-maeve .cs-item-7 .cs-picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    height: 90%;
-    width: 90%;
-    object-fit: contain;
+    border-bottom: var(--borderWidth2) solid black;
   }
   #gallery-maeve .cs-item-7 .cs-picture img {
-    position: relative;
-    object-fit: contain;
+    width: 95%;
+    border: 3px solid black;
+    border-bottom: 0;
+    margin-bottom: 0;
+    object-fit: cover;
   }
   #gallery-maeve .cs-item-11 {
-    grid-column: 6 / span 14;
+    grid-column: 10 / span 14;
     grid-row: 19 / span 6;
     display: flex;
     justify-content: flex-start;
@@ -201,7 +227,7 @@
     object-fit: contain;
   }
   #gallery-maeve .cs-item-10 {
-    grid-column: 20 / span 10;
+    grid-column: 24 / span 10;
     grid-row: 19 / span 6;
     display: flex;
     justify-content: flex-start;
@@ -225,57 +251,61 @@
     object-fit: contain;
   }
   #gallery-maeve .cs-item-2 {
-    grid-column: 27 / span 12;
+    grid-column: 31 / span 14;
     grid-row: 1 / span 6;
   }
   #gallery-maeve .cs-item-1 {
-    grid-column: 27 / span 12;
+    grid-column: 31 / span 14;
     grid-row: 7 / span 6;
   }
   #gallery-maeve .cs-item-6 {
-    grid-column: 27 / span 12;
+    grid-column: 31 / span 14;
     grid-row: 13 / span 6;
   }
   #gallery-maeve .cs-item-4 {
-    grid-column: 40 / span 12;
+    grid-column: 46 / span 14;
     grid-row: 7 / span 6;
   }
   #gallery-maeve .cs-item-4 .cs-picture {
     display: flex;
     position: relative;
     top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 12%;
-    margin-left: auto;
+    margin: 0 auto;
     height: 100%;
-    width: 51%;
+    width: 60%;
     object-fit: contain;
-    transform: rotate(90deg);
   }
   #gallery-maeve .cs-item-18 {
-    grid-column: 40 / span 14;
+    grid-column: 46 / span 14;
     grid-row: 7 / span 6;
     z-index: -1;
   }
   #gallery-maeve .cs-item-9 {
-    grid-column: 40 / span 13;
+    grid-column: 46 / span 14;
     grid-row: 13 / span 6;
   }
   #gallery-maeve .cs-item-12 {
-    grid-column: 40 / span 13;
+    grid-column: 46 / span 14;
     grid-row: 1 / span 6;
   }
+  #gallery-maeve .cs-item-17 {
+    display: block;
+    grid-column: 60 / span 1;
+    grid-row: 1 / span 18;
+  }
   #gallery-maeve .cs-item-14 {
-    grid-column: 11 / span 1;
+    display: block;
+    grid-column: 15 / span 1;
     grid-row: 1 / span 18;
   }
   #gallery-maeve .cs-item-15 {
-    grid-column: 26 / span 1;
+    display: block;
+    grid-column: 30 / span 1;
     grid-row: 1 / span 18;
   }
   #gallery-maeve .cs-item-16 {
-    grid-column: 39 / span 1;
+    display: block;
+    grid-column: 45 / span 1;
     grid-row: 1 / span 18;
   }
 }

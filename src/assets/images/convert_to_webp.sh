@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Directory containing the images
-FILES="./souvenirs-meles/"
-
+# FILES="./abstractions/"
+FILES=$1
 # Loop through each .png and .jpg file in the directory
-for file in "$FILES"*.png "$FILES"*.jpg; do
+for file in "$FILES"*.JPG "$FILES"*.jpg; do
     # Check if the file exists (to avoid errors if there are no matching files)
     if [ -e "$file" ]; then
         # Extract the file name without extension

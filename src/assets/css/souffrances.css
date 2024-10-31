@@ -63,7 +63,7 @@
     border-bottom: var(--borderWidth2) solid black;
   }
   #gallery-maeve .cs-item-5b .cs-picture img {
-    width: 62%;
+    width: 60%;
     border: 3px solid black;
     border-bottom: 0;
     border-top: 0;
@@ -146,6 +146,16 @@
     z-index: 100;
     grid-column: 37 / span 10;
     grid-row: 1 / span 4;
+  }
+  #gallery-maeve .cs-item-5b .cs-picture {
+    border-bottom: var(--borderWidth2) solid black;
+  }
+  #gallery-maeve .cs-item-5b .cs-picture img {
+    width: 90%;
+    border: 3px solid black;
+    border-bottom: 0;
+    border-top: 0;
+    object-fit: cover;
   }
   #gallery-maeve .cs-item-9 {
     display: block;
