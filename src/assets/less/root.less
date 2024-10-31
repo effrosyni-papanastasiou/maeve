@@ -13,6 +13,7 @@
       justify-content: center;
       margin: 0 auto;
       padding-top: 1rem;
+      
     }
 }
 
@@ -146,15 +147,16 @@
     }
     #apropos {
       position: relative;
-  }
+    }
     #apropos .cs-container {
-        background-color: white;
-        margin-left: 70%;
-        display: inline-block; /* Changes the container to an inline-block element */
-        padding: 0 1rem;
-        width: auto;        // margin: 0 auto;
-        border: var(--borderWidth2) solid black;
-        border-bottom: 0;
+      white-space: nowrap;
+      background-color: white;
+      margin-left: 60%;
+      display: inline-block; /* Changes the container to an inline-block element */
+      padding: 0 1rem;
+      // width: 100%; 
+      border: var(--borderWidth2) solid black;
+      border-bottom: 0;
     }
     #apropos .cs-footer-subtitle {
         background-color: white;
@@ -377,10 +379,8 @@
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
       font-family: "Segoe Script", "Arial";
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      border-left: var(--borderWidth8) solid black;
-      border-right: var(--borderWidth8) solid black;
-      border-bottom: var(--borderWidth2) solid black;
-      border-top: var(--borderWidth8) solid black;
+      border: var(--borderWidth4) solid black;
+      
     }
     #cs-navigation .cs-container {
       display: flex;
