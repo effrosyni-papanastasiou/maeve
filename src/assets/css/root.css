@@ -241,6 +241,7 @@
     display: block;
     /* starting point is 10px down from its original point */
     transition: transform 0.5s;
+    padding: 0.6rem;
   }
   #gallery-maeve .cs-link {
     font-size: 0.9375rem;
