@@ -127,6 +127,7 @@
 @media only screen and (min-width: 48rem) {
   #cs-navigation .cs-logo {
     margin: 0 20%;
+    font-size: clamp(1rem, 2vw, 2rem);
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(60, 1fr);
