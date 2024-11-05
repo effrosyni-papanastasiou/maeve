@@ -5,7 +5,6 @@
 @media only screen and (min-width: 0rem) {
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(36, 1fr);
-    /* 158px - 304px */
   }
   #gallery-maeve .cs-item {
     background-color: white;
@@ -127,8 +126,7 @@
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(52, 1fr);
-    /* 158px - 304px */
-    grid-template-rows: repeat(11, 5.2vw);
+    grid-template-rows: repeat(1, 5.2vw);
   }
   #gallery-maeve .cs-item-1 {
     grid-column: 1 / span 9;
@@ -243,7 +241,7 @@
     grid-row: 11 / span 1;
   }
   #gallery-maeve .cs-text {
-    padding: var(--textPadding);
+    padding: 35px;
     font-size: var(--textFontSize);
   }
 }

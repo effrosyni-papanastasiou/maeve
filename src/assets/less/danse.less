@@ -11,9 +11,6 @@
       // padding-bottom: 1rem;
       // padding-top: 0.5rem;
     }
-    #gallery-maeve .cs-image-group {
-      // grid-template-rows: repeat(5, clamp(7.25rem, 50vw, 37.5rem));
-    }
     #gallery-maeve .cs-title-box {
       background-color: white;
     }
@@ -87,6 +84,9 @@
 
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
+    main {
+      transform: rotate(var(--bodyDeg)) translate(2%, -5%);
+    }
     #cs-navigation .cs-logo {
         font-size: clamp(1rem, 2vw, 2rem);
         padding-bottom: 1rem;
@@ -95,7 +95,6 @@
     }
     #gallery-maeve .cs-image-group {
       grid-template-columns: repeat(59, 1fr);
-      /* 158px - 304px */
       grid-template-rows: repeat(42, 1.59375vw);
       border:  var(--borderWidth4) solid black;
       border-top: 0px;  
@@ -230,10 +229,9 @@
         border-bottom: 0;
         img {    
           width: 85%;
-          border: 3px solid black;  
-          margin-top: 5%;
-          margin-right: 0%;
-          margin-left: auto;
+          border: 3px solid black;
+          border-top: 1px solid black;  
+          margin: 0 auto;
           margin-bottom: 0;
           object-fit: cover;
         }
@@ -270,6 +268,9 @@
           object-fit: cover;
         }
       }
+    }
+    #gallery-maeve .cs-text {
+        padding: 30px;
     }
 }
   

@@ -84,6 +84,9 @@
 }
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
+  main {
+    transform: rotate(var(--bodyDeg)) translate(5%, -8%);
+  }
   #cs-navigation .cs-logo {
     font-size: clamp(1rem, 2vw, 2rem);
     margin: 0 18%;
@@ -92,7 +95,7 @@
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(50, 1fr);
-    grid-template-rows: repeat(60, 1.5vw);
+    grid-template-rows: repeat(30, 1.5vw);
   }
   #gallery-maeve .cs-item-1 {
     grid-column: 1 / span 8;
@@ -199,6 +202,9 @@
     grid-row: 20 / span 19;
   }
   #gallery-maeve .cs-text {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
     font-size: clamp(0.65rem, 1vw, 1rem);
   }
 }

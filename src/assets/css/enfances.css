@@ -120,7 +120,7 @@
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(44, 1fr);
-    grid-template-rows: repeat(60, 1.5vw);
+    grid-template-rows: repeat(1, 1.5vw);
     border-top: 0px;
   }
   #gallery-maeve .cs-item-1 {

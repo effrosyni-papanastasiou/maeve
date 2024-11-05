@@ -78,6 +78,9 @@
 }
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
+  main {
+    transform: rotate(var(--bodyDeg)) translate(2%, -5%);
+  }
   #cs-navigation .cs-logo {
     font-size: clamp(1rem, 2vw, 2rem);
     padding-bottom: 1rem;
@@ -86,7 +89,6 @@
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(59, 1fr);
-    /* 158px - 304px */
     grid-template-rows: repeat(42, 1.59375vw);
     border: var(--borderWidth4) solid black;
     border-top: 0px;
@@ -218,9 +220,8 @@
   #gallery-maeve .cs-item-6c .cs-picture img {
     width: 85%;
     border: 3px solid black;
-    margin-top: 5%;
-    margin-right: 0%;
-    margin-left: auto;
+    border-top: 1px solid black;
+    margin: 0 auto;
     margin-bottom: 0;
     object-fit: cover;
   }
@@ -255,5 +256,8 @@
     margin-left: auto;
     margin-bottom: 0;
     object-fit: cover;
+  }
+  #gallery-maeve .cs-text {
+    padding: 30px;
   }
 }

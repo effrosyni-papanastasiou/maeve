@@ -78,14 +78,15 @@
     padding: var(--textPadding);
     font-size: var(--textFontSize);
   }
-  #gallery-maeve .cs-item-7,
-  #gallery-maeve .cs-item-8,
   #gallery-maeve .cs-item-9 {
     display: none;
   }
 }
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
+  main {
+    transform: rotate(var(--bodyDeg)) translate(5%, -8%);
+  }
   #cs-navigation .cs-logo {
     font-size: clamp(1.5rem, 3vw, 3rem);
     margin: 0 20%;
@@ -94,15 +95,15 @@
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(52, 1fr);
-    grid-template-rows: repeat(12, 6.1875vw);
+    grid-template-rows: repeat(1, 6.1875vw);
     gap: 0;
   }
   #gallery-maeve .cs-item-1 {
-    grid-column: 1 / span 20;
+    grid-column: 4 / span 17;
     grid-row: 7 / span 3;
   }
   #gallery-maeve .cs-item-1 .cs-picture img {
-    width: 60%;
+    width: 70%;
   }
   #gallery-maeve .cs-item-2 {
     grid-column: 1 / span 20;
@@ -169,19 +170,8 @@
     grid-row: 1 / span 4;
   }
   #gallery-maeve .cs-text {
+    padding: 30px;
     padding-top: 80%;
     font-size: var(--textFontSize);
-  }
-  #gallery-maeve .cs-item-7 {
-    display: block;
-    background-color: black;
-    grid-column: 1 / span 4;
-    grid-row: 7 / span 4;
-  }
-  #gallery-maeve .cs-item-8 {
-    display: block;
-    background-color: black;
-    grid-column: 22 / span 3;
-    grid-row: 7 / span 4;
   }
 }

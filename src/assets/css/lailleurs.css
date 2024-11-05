@@ -109,7 +109,7 @@
   }
   #gallery-maeve .cs-item-13 .cs-picture img {
     object-fit: cover;
-    aspect-ratio: 1.2;
+    aspect-ratio: 1.4;
   }
   #gallery-maeve .cs-item-10 {
     grid-column: 19 / span 18;
@@ -125,33 +125,20 @@
 }
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
+  main {
+    transform: rotate(var(--bodyDeg)) translate(2%, -5%);
+  }
   #cs-navigation .cs-logo {
-    margin: 0 20%;
-    font-size: clamp(1rem, 2vw, 2rem);
+    margin: 0 21%;
+    font-size: clamp(1rem, 2.1vw, 2.5rem);
   }
   #gallery-maeve .cs-image-group {
     grid-template-columns: repeat(60, 1fr);
-    grid-template-rows: repeat(25, 3vw);
+    grid-template-rows: repeat(1, 3vw);
   }
   #gallery-maeve .cs-item-13 {
     grid-column: 1 / span 14;
-    grid-row: 8 / span 6;
-  }
-  #gallery-maeve .cs-item-13 .cs-picture {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    height: 90%;
-    width: 100%;
-    object-fit: contain;
-  }
-  #gallery-maeve .cs-item-13 .cs-picture img {
-    position: relative;
-    object-fit: contain;
+    grid-row: 9 / span 5;
   }
   #gallery-maeve .cs-item-3 {
     grid-column: 1 / span 14;
@@ -205,7 +192,7 @@
   }
   #gallery-maeve .cs-item-11 {
     grid-column: 10 / span 14;
-    grid-row: 19 / span 6;
+    grid-row: 19 / span 3;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -218,18 +205,16 @@
     position: relative;
     top: 0;
     left: 0;
-    margin: 0 auto;
-    height: 90%;
-    width: 90%;
-    object-fit: contain;
+    height: 100%;
+    width: 100%;
   }
   #gallery-maeve .cs-item-11 .cs-picture img {
     position: relative;
-    object-fit: contain;
+    object-fit: cover;
   }
   #gallery-maeve .cs-item-10 {
     grid-column: 24 / span 10;
-    grid-row: 19 / span 6;
+    grid-row: 19 / span 3;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -243,8 +228,7 @@
     top: 0;
     left: 0;
     margin: 0 auto;
-    height: 90%;
-    width: 70%;
+    width: 87%;
     object-fit: contain;
   }
   #gallery-maeve .cs-item-10 .cs-picture img {
