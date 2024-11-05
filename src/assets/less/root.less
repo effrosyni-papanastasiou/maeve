@@ -13,7 +13,6 @@
       justify-content: center;
       margin: 0 auto;
       padding-top: 1rem;
-      
     }
 }
 
@@ -24,8 +23,7 @@
     }
 }
   
-  /* CodeStitch Root and Helpers */
-  @media only screen and (min-width: 0rem) {
+@media only screen and (min-width: 0rem) {
     :root {
       --primary: black;
       --primaryLight: #999;
@@ -33,27 +31,19 @@
       --bodyTextColor: black;
       --bodyTextColorWhite: #fafbfc;
       --bodyDeg: 12deg;
-      /* 13px - 16px */
-      /* --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem); */
-      /* 34px - 55px */
       --headerFontSize: clamp(2.1796rem, 4.3875vw, 3.4453rem);
       --MobileTitleFontSize: clamp(1.48rem, 2.19vw, 1.72rem);
       --NamesFontSize: clamp(0.875rem, 1.111vw, 1.25rem);
       --textFontSize:  clamp(1rem, 1.30vw, 1.55rem);
       --footerFontSize: clamp(0.875rem, 1.6667vw, 1.5625rem);
-      /* --NamesFontSize: 1rem; */
       --empreintesFontSize: clamp(3.22rem, 4.3875vw, 5.44rem);
       --borderWidth2: 2px;
       --borderWidth4: 4px;
       --borderWidth8: 8px;
       --letterSpacing: 0.4em;
-      /* 31px - 49px */
-  
       --bodyFontSize: clamp(0.8rem, 1.30vw, 1rem);
-      /* 60px - 100px top and bottom */
       --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
       --textPadding: clamp(1.75rem, 1.82vw, 2.25rem) 1rem;
-
       --empreintesPadding: clamp(3.75rem, 5.213vw, 6.25rem) 1rem;
       background-color: #C5E2EA;
     }
@@ -154,7 +144,6 @@
       margin-left: 70%;
       display: inline-block; /* Changes the container to an inline-block element */
       padding: 0 0.7rem;
-      // width: 100%; 
       border: var(--borderWidth2) solid black;
       border-bottom: 0;
     }
@@ -168,7 +157,7 @@
     }
     #apropos .cs-footer-subtitle .cs-h3 a {
       font-weight: 400;
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
     #gallery-maeve {
       position: relative;
@@ -179,16 +168,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
     }
     #gallery-maeve .cs-content {
-      /* set text align to left if content needs to be left aligned */
       text-align: center;
       width: 100%;
       display: flex;
       flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
       align-items: center;
     }
     #gallery-maeve .cs-image-group {
@@ -242,7 +228,7 @@
     }
     #gallery-maeve .cs-h2 {
       /* 14px - 20px */
-      font-size: 0.7rem;
+      font-size: 1rem;
       line-height: 1em;
       text-align: center;
       margin: 0;
