@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0rem) {
   #gallery-maeve .cs-item-1 {
     grid-column: 1 / span 12;
-    grid-row: 1 / span 7;
+    grid-row: 1 / span 14;
   }
   #gallery-maeve .cs-item-1 .cs-picture img {
     object-fit: cover;
@@ -13,7 +13,7 @@
   }
   #gallery-maeve .cs-item-2 {
     grid-column: 13 / span 12;
-    grid-row: 1 / span 7;
+    grid-row: 1 / span 14;
   }
   #gallery-maeve .cs-item-2 .cs-picture img {
     object-fit: cover;
@@ -21,7 +21,7 @@
   }
   #gallery-maeve .cs-item-3 {
     grid-column: 25 / span 12;
-    grid-row: 1 / span 7;
+    grid-row: 1 / span 14;
   }
   #gallery-maeve .cs-item-3 .cs-picture img {
     object-fit: cover;
@@ -29,11 +29,11 @@
   }
   #gallery-maeve .cs-item-6 {
     grid-column: 1 / span 18;
-    grid-row: 8 / span 7;
+    grid-row: 15 / span 14;
   }
   #gallery-maeve .cs-item-5 {
     grid-column: 19 / span 18;
-    grid-row: 8 / span 7;
+    grid-row: 15 / span 14;
   }
   #gallery-maeve .cs-item-5 .cs-picture img {
     object-fit: cover;
@@ -41,11 +41,11 @@
   }
   #gallery-maeve .cs-item-8 {
     grid-column: 1 / span 18;
-    grid-row: 15 / span 7;
+    grid-row: 29 / span 14;
   }
   #gallery-maeve .cs-item-7 {
     grid-column: 19 / span 18;
-    grid-row: 15 / span 7;
+    grid-row: 29 / span 14;
   }
   #gallery-maeve .cs-item-7 .cs-picture img {
     object-fit: cover;
@@ -53,7 +53,7 @@
   }
   #gallery-maeve .cs-item-4b {
     grid-column: 1 / span 12;
-    grid-row: 23 / span 7;
+    grid-row: 43 / span 14;
   }
   #gallery-maeve .cs-item-4b .cs-picture img {
     object-fit: cover;
@@ -61,7 +61,7 @@
   }
   #gallery-maeve .cs-item-4c {
     grid-column: 13 / span 12;
-    grid-row: 23 / span 7;
+    grid-row: 43 / span 14;
   }
   #gallery-maeve .cs-item-4c .cs-picture img {
     object-fit: cover;
@@ -69,7 +69,7 @@
   }
   #gallery-maeve .cs-item-4 {
     grid-column: 25 / span 12;
-    grid-row: 23 / span 7;
+    grid-row: 43 / span 14;
   }
   #gallery-maeve .cs-item-4 .cs-picture img {
     object-fit: cover;
@@ -77,23 +77,23 @@
   }
   #gallery-maeve .cs-item-13 {
     grid-column: 1 / span 18;
-    grid-row: 31 / span 7;
+    grid-row: 57 / span 14;
   }
   #gallery-maeve .cs-item-9 {
     grid-column: 19 / span 18;
-    grid-row: 31 / span 7;
+    grid-row: 57 / span 14;
   }
   #gallery-maeve .cs-item-14 {
     grid-column: 1 / span 18;
-    grid-row: 38 / span 7;
+    grid-row: 71 / span 14;
   }
   #gallery-maeve .cs-item-15 {
     grid-column: 19 / span 18;
-    grid-row: 38 / span 7;
+    grid-row: 71 / span 14;
   }
   #gallery-maeve .cs-item-16 {
     grid-column: 19 / span 18;
-    grid-row: 45 / span 7;
+    grid-row: 85 / span 14;
   }
   #gallery-maeve .cs-item-16 .cs-picture img {
     object-fit: cover;
@@ -101,7 +101,7 @@
   }
   #gallery-maeve .cs-item-17 {
     grid-column: 1 / span 18;
-    grid-row: 45 / span 7;
+    grid-row: 85 / span 14;
   }
   #gallery-maeve .cs-item-17 .cs-picture img {
     object-fit: cover;
@@ -109,7 +109,7 @@
   }
   #gallery-maeve .cs-item-18 {
     grid-column: 19 / span 18;
-    grid-row: 52 / span 7;
+    grid-row: 99 / span 14;
   }
 }
 /* ----------- Tablet - 768px --------------*/
