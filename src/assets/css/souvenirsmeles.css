@@ -76,7 +76,17 @@
   }
   #gallery-maeve .cs-item-9 {
     grid-column: 19 / span 18;
+    grid-row: 57 / span 14;
+  }
+  #gallery-maeve .cs-item-5b {
+    grid-column: 19 / span 18;
     grid-row: 29 / span 14;
+  }
+  #gallery-maeve .cs-item-5b .cs-picture img {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    object-fit: cover;
   }
   #gallery-maeve .cs-item-10 {
     display: none;
@@ -146,6 +156,17 @@
     grid-row: 26 / span 13;
   }
   #gallery-maeve .cs-item-5 .cs-picture img {
+    width: 100%;
+    border: 0px;
+    margin-top: 5%;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+  #gallery-maeve .cs-item-5b {
+    grid-column: 9 / span 12;
+    grid-row: 39 / span 13;
+  }
+  #gallery-maeve .cs-item-5b .cs-picture img {
     width: 100%;
     border: 0px;
     margin-top: 5%;
