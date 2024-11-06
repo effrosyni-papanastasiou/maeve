@@ -9,14 +9,18 @@
   #cs-navigation .cs-logo {
     font-size: clamp(1.2rem, 1vw, 1.2rem);
   }
-  #gallery-maeve .cs-item-1 {
-    grid-column: 1 / span 24;
+  #gallery-maeve .cs-item-5 {
+    grid-column: 1 / span 12;
     grid-row: 1 / span 14;
   }
-  #gallery-maeve .cs-item-1 .cs-picture img {
+  #gallery-maeve .cs-item-5 .cs-picture img {
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1.597;
+    aspect-ratio: 0.667;
+  }
+  #gallery-maeve .cs-item-6 {
+    grid-column: 13 / span 12;
+    grid-row: 1 / span 14;
   }
   #gallery-maeve .cs-item-2 {
     grid-column: 25 / span 12;
@@ -25,7 +29,7 @@
   #gallery-maeve .cs-item-2 .cs-picture img {
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 0.79;
+    aspect-ratio: 0.665;
   }
   #gallery-maeve .cs-item-3 {
     grid-column: 1 / span 18;
@@ -40,21 +44,12 @@
     object-fit: cover;
     aspect-ratio: 1.465;
   }
-  #gallery-maeve .cs-item-5 {
-    grid-column: 19 / span 18;
-    grid-row: 29 / span 12;
-  }
-  #gallery-maeve .cs-item-5 .cs-picture img {
-    height: 100%;
-    object-fit: cover;
-    aspect-ratio: 0.667;
-  }
-  #gallery-maeve .cs-item-6 {
+  #gallery-maeve .cs-item-1 {
     grid-column: 1 / span 18;
-    grid-row: 29 / span 12;
+    grid-row: 42 / span 14;
   }
   #gallery-maeve .cs-item-7 {
-    grid-column: 10 / span 18;
+    grid-column: 19 / span 18;
     grid-row: 42 / span 14;
   }
   #gallery-maeve .cs-item-8 {
