@@ -130,19 +130,19 @@
   #gallery-maeve .cs-item-8 {
     grid-column: 31 / span 23;
     grid-row: 1 / span 20;
-    border-bottom: var(--borderWidth8) solid black;
-    border-right: var(--borderWidth8) solid black;
+    border-bottom: var(--borderWidth4) solid black;
+    border-right: var(--borderWidth4) solid black;
   }
   #gallery-maeve .cs-item-9 {
     display: block;
     grid-column: 1 / span 1;
     grid-row: 1 / span 42;
-    border-left: var(--borderWidth8) solid black;
+    border-left: var(--borderWidth4) solid black;
   }
   #gallery-maeve .cs-item-10 {
     display: block;
     grid-column: 30 / span 1;
     grid-row: 1 / span 42;
-    border-right: var(--borderWidth8) solid black;
+    border-right: var(--borderWidth4) solid black;
   }
 }

@@ -204,7 +204,7 @@
   #gallery-maeve .cs-item-7 {
     background-color: white;
     grid-column: 1 / span 15;
-    grid-row: 4 / span 14;
+    grid-row: 1 / span 14;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +212,7 @@
   }
   #gallery-maeve .cs-item-6c {
     grid-column: 16 / span 13;
-    grid-row: 4 / span 14;
+    grid-row: 1 / span 14;
   }
   #gallery-maeve .cs-item-6c .cs-picture {
     border-bottom: 0;
@@ -227,7 +227,7 @@
   }
   #gallery-maeve .cs-item-6b {
     grid-column: 1 / span 15;
-    grid-row: 18 / span 14;
+    grid-row: 15 / span 14;
   }
   #gallery-maeve .cs-item-6b .cs-picture {
     border-bottom: 0;
@@ -243,7 +243,7 @@
   }
   #gallery-maeve .cs-item-6a {
     grid-column: 16 / span 13;
-    grid-row: 18 / span 14;
+    grid-row: 15 / span 14;
   }
   #gallery-maeve .cs-item-6a .cs-picture {
     border-bottom: 0;
