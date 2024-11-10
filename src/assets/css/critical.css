@@ -6,14 +6,6 @@
   #cs-navigation .cs-logo {
     text-transform: none;
   }
-  #apropos .cs-footer-subtitle {
-    background-color: white;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   #subtitle {
     position: relative;
   }
@@ -234,13 +226,6 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #apropos .cs-footer-subtitle .cs-h3 a {
-    font-weight: 400;
-    font-size: var(--NamesFontSize);
-  }
-  #apropos .cs-container {
-    margin-left: 78%;
-  }
   #subtitle {
     position: relative;
   }
