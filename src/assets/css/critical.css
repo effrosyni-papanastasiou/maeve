@@ -26,6 +26,10 @@
     align-items: center;
     justify-content: center;
   }
+  #subtitle .cs-footer-subtitle a,
+  #subtitle .cs-footer-email a {
+    text-decoration: none;
+  }
   #subtitle .cs-footer-subtitle {
     border-bottom: var(--borderWidth4) solid black;
   }
