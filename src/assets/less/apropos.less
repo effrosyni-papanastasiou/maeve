@@ -158,24 +158,39 @@
   #gallery-maeve .cs-item-2 {
     grid-column: 1 / span 36;
     grid-row: 7 / span 20;
+    .cs-text {
+      font-size: clamp(1.5rem, 1.7vw, 1.8rem);
+      max-width: 50.625rem;
+    }
+    h2 {
+      padding: var(--textPadding);
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    p {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 0;
+      font-weight: 500;
+    }
   }
-  #gallery-maeve .cs-text {
-    font-size: clamp(1rem, 1.7vw, 1.8rem);
-    max-width: 50.625rem;
-  }
-  #gallery-maeve h2 {
-    padding: var(--textPadding);
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  #gallery-maeve p {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 0;
-    font-weight: 500;
+  #gallery-maeve .cs-item-3 {
+    grid-column: 1 / span 36;
+    grid-row: 27 / span 2;
+    .cs-text {
+      max-width: unset;
+      text-align: left;
+    }
+    p {
+      font-weight: 500;
+      margin: 0 auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 }
+
 /* ----------- Tablet - 768px --------------*/
 @media only screen and (min-width: 48rem) {
   #cs-navigation .cs-logo {
@@ -201,7 +216,12 @@
   }
   #gallery-maeve .cs-item-1 {
     grid-column: 10 / span 14;
-    grid-row: 1 / span 20;
+    grid-row: 1 / span 19;
+  }
+  #gallery-maeve .cs-item-3 {
+    grid-column: 10 / span 14;
+    grid-row: 20 / span 6;
+    border-bottom: var(--borderWidth8) solid black;
   }
   #gallery-maeve .cs-item-2 {
     grid-column: 24 / span 23;
