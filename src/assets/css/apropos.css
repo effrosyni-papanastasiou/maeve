@@ -213,11 +213,13 @@
   #gallery-maeve .cs-item-1 {
     grid-column: 10 / span 14;
     grid-row: 1 / span 19;
+    border-left: var(--borderWidth8) solid black;
   }
   #gallery-maeve .cs-item-3 {
     grid-column: 10 / span 14;
     grid-row: 20 / span 6;
     border-bottom: var(--borderWidth8) solid black;
+    border-left: var(--borderWidth8) solid black;
   }
   #gallery-maeve .cs-item-2 {
     grid-column: 24 / span 23;
