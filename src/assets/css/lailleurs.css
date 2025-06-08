@@ -123,6 +123,14 @@
     grid-column: 19 / span 18;
     grid-row: 43 / span 7;
   }
+  #gallery-maeve .cs-item-6b {
+    grid-column: 1 / span 18;
+    grid-row: 50 / span 7;
+  }
+  #gallery-maeve .cs-item-6b .cs-picture img {
+    object-fit: cover;
+    aspect-ratio: 1.2;
+  }
   #gallery-maeve .cs-item-14,
   #gallery-maeve .cs-item-15,
   #gallery-maeve .cs-item-16,
@@ -271,6 +279,10 @@
   #gallery-maeve .cs-item-6 {
     grid-column: 31 / span 14;
     grid-row: 13 / span 6;
+  }
+  #gallery-maeve .cs-item-6b {
+    grid-column: 31 / span 14;
+    grid-row: 19 / span 5;
   }
   #gallery-maeve .cs-item-4 {
     grid-column: 46 / span 14;
