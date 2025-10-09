@@ -78,6 +78,10 @@
     grid-column: 19 / span 18;
     grid-row: 57 / span 14;
   }
+  #gallery-maeve .cs-item-9b {
+    grid-column: 1 / span 18;
+    grid-row: 57 / span 14;
+  }
   #gallery-maeve .cs-item-5b {
     grid-column: 19 / span 18;
     grid-row: 29 / span 14;
@@ -224,7 +228,7 @@
   }
   #gallery-maeve .cs-item-9b {
     grid-column: 34 / span 17;
-    grid-row: 30 / span 19;
+    grid-row: 39 / span 19;
   }
   #gallery-maeve .cs-text {
     padding: 0;
